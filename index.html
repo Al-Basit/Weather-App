@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<body lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/weather-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+</body>
+
+<video id="background-video" autoplay loop muted poster="assets/bg-test.jpg">
+    <source src="assets/bg.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo ">
+            <a href="#" class="fs-700 fw-bold text-clr-primary txt-dcr-none">Weather<span>.</span></a>
+        </div>
+        <form class="search-form">
+            <input id="search-input" type="text" placeholder="search by city...">
+            <span class="fs-500 fw-bold">|</span>
+            <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        </header>
+
+        <main class="main-content">
+            <section class="curr-content">
+                <div>
+                    <h1 id="curr-temp" class="fs-900 fw-bold">24°C</h1>
+                    <h3 class="fs-500 fw-semi-bold"><i class="fa-sharp fa-solid fa-location-dot text-clr-primary"></i><span id="curr-location"> Karachi, Pakistan</span></h3>
+                </div>
+                <div>
+                    <h3 id="curr-day&time" class="fs-700 fw-bold"> Sunday 6:00</h2>
+
+                    <p id="curr-date" class="fs-500">August, 23rd</p>
+        
+                    <div class="weather-condition">
+                        <i id="curr-condition-icon" class=""></i>
+                        <h2 id="curr-condition" class="fs-700">cloudy</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="upcoming-content">
+                <h3 class="fs-600 fw-semi-bold">Upcoming days</h3>
+
+                <div class="upcoming-days-weather">
+                <div >
+                    <h4 class="day">Mon</h4>
+                    <i class=""></i>
+                    <p class="day-temp">9°C / 25°C</p>
+                </div>
+                <div >
+                    <h4 class="day">Tue</h4>
+                    <i class=""></i>
+                    <p class="day-temp">9°C / 25°C</p>
+                </div>
+                <div >
+                    <h4 class="day">Wed</h4>
+                    <i class=""></i>
+                    <p class="day-temp">9°C / 25°C</p>
+                </div>
+                <div >
+                    <h4 class="day">Thu</h4>
+                    <i class=""></i>
+                    <p class="day-temp">9°C / 25°C</p>
+                </div>
+                <div >
+                    <h4 class="day">Fri</h4>
+                    <i class=""></i>
+                    <p class="day-temp">9°C / 25°C</p>
+                </div>
+                <div >
+                    <h4 class="day">Sat</h4>
+                    <i class=""></i>
+                    <p class="day-temp">9°C / 25°C</p>
+                </div>
+            </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>

@@ -1,9 +1,10 @@
 import { conditions } from "./icons-classes.js";
+import API_KEY from "./key.js";
 
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": "fc95c8808emsh44f372cf1e795ebp1aaa96jsn2476d4d5c773",
+    "X-RapidAPI-Key": API_KEY,
     "X-RapidAPI-Host": "yahoo-weather5.p.rapidapi.com",
   },
 };
